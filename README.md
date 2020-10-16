@@ -32,6 +32,7 @@ As none of this requires Java as a platform, the adapter can theoretically be im
 This README provides an example to set up the project contained in this repo using the Intellij IDE and the Gradle build system. Other IDEs can be used, provided the user is familiar with using Gradle.
 
 Intellij Idea: https://www.jetbrains.com/idea/
+
 OpenJDK 11: https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html 
 
 # Setup
@@ -41,9 +42,11 @@ On opening Intellij, select "Open/Import Project" rather than creating a new one
 Select the build.gradle file found at the root of this repository
 
 Find the run configurations as seen here:
+
 ![run-config](https://raw.githubusercontent.com/Bible-Translation-Tools/Orature-Plugin/main/screenshots/edit-run-configurations.png)
 
 Edit the run configuration to provide the program arugments (to provide the wav argument) as seen here:
+
 ![edit-config](https://raw.githubusercontent.com/Bible-Translation-Tools/Orature-Plugin/main/screenshots/plugin-program-arguments.png)
 
 # Compiling
@@ -70,6 +73,7 @@ For your convenience, the Kotlin side has been pre-configured with the Clikt lib
 For Java, only a simple Hello World is provided to verify setup.
 
 Build should trigger the jar process (which will be overriden by shadow jar). You can find the output jar in the build/libs directory shown here:
+
 ![build-output](https://raw.githubusercontent.com/Bible-Translation-Tools/Orature-Plugin/main/screenshots/build-output.png)
 
 To verify the jar, it can be launched with ```java -jar orature-plugin.jar```
